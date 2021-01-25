@@ -22,7 +22,6 @@
     "lint": "eslint -f friendly --ext .js,.vue ./",
     "test": "BABEL_ENV=test karma start scripts/karma.conf.js",
     "precommit": "npm run lint",
-    "commitmsg": "commitlint -E GIT_PARAMS",
     "release": "bash ./scripts/release.sh"
   },
   "keywords": [
@@ -95,23 +94,6 @@
     "last 4 Android versions",
     "last 3 iOS versions"
   ],
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ],
-    "rules": {
-      "scope-enum": [
-        2,
-        "always",
-        [
-          "core",
-          "config",
-          "spinner",
-          "deps"
-        ]
-      ]
-    }
-  },
   "eslintConfig": {
     "root": true,
     "extends": [
